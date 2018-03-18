@@ -2,7 +2,7 @@
 F_CPU	=	16000000
 MCU	=	atmega328p
 
-OBJS	=	main uart
+OBJS	=	main uart util
 OUTPUT	=	balancer
 
 all: ${OUTPUT}.hex
