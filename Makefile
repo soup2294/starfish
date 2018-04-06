@@ -2,7 +2,7 @@
 F_CPU	=	16000000
 MCU	=	atmega328p
 
-OBJS	=	main uart util
+OBJS	=	main uart util mpu util twi
 OUTPUT	=	balancer
 
 all: ${OUTPUT}.hex
@@ -16,7 +16,8 @@ ${OUTPUT}.elf: $(OBJS:=.o)
 %.o: %.c
 	avr-gcc -Os -DF_CPU=${F_CPU} -mmcu=${MCU} -c $<
 
-flash:
+flash: all
+	sudo pkill screen || true
 	sudo avrdude -c arduino -p m328p -b 57600 -P /dev/ttyUSB0 -U flash:w:${OUTPUT}.hex
 
 clean:

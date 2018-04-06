@@ -87,17 +87,19 @@ int main()
 
 	setup_timers();
 	setup_adc();
+	setup_twi();
+
+	test_mpu();
 
 	while (1)
 	{
-		//uint8_t buf[64];
-		uint16_t pot = get_pot();
-		set_pos(pot<<3);
-		//snprintf(buf, 64, "%d\n", pot);
+		uint8_t buf[64];
+		//uint16_t pot = get_pot();
+		//set_pos(pot<<3);
+		//snprintf(buf, 64, "%x\n", MYUBRR);
 		//sout(buf);
 		PORTD ^= 1<<4;
-		//_delay_ms(100);
-		//sout("loop\n");
+		_delay_ms(100);
 	}
 
 
