@@ -154,9 +154,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 3800 7100 3800
 Wire Wire Line
-	7100 3800 7100 4550
-Wire Wire Line
-	4800 4550 7300 4550
+	7100 4550 7100 3800
 Wire Wire Line
 	6100 4550 6100 5100
 Connection ~ 7100 4550
@@ -169,7 +167,7 @@ Wire Wire Line
 	5800 4400 5800 4550
 Connection ~ 5800 4550
 Wire Wire Line
-	6650 4400 6650 4550
+	6650 4550 6650 4400
 Connection ~ 6650 4550
 Wire Wire Line
 	5900 3250 7200 3250
@@ -181,4 +179,6 @@ Wire Wire Line
 	7650 3200 7650 4350
 Wire Wire Line
 	7650 4350 7300 4350
+Wire Wire Line
+	4800 4550 7100 4550
 $EndSCHEMATC
