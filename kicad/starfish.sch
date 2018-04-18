@@ -96,7 +96,7 @@ L Conn_02x03_Counter_Clockwise J2
 U 1 1 5ACD65C4
 P 5500 4300
 F 0 "J2" H 5550 4500 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 5550 4100 50  0000 C CNN
+F 1 "conn1" H 5550 4100 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 5500 4300 50  0001 C CNN
 F 3 "" H 5500 4300 50  0001 C CNN
 	1    5500 4300
@@ -107,40 +107,19 @@ L Conn_02x03_Counter_Clockwise J5
 U 1 1 5ACD664C
 P 6350 4300
 F 0 "J5" H 6400 4500 50  0000 C CNN
-F 1 "Conn_02x03_Counter_Clockwise" H 6400 4100 50  0000 C CNN
+F 1 "conn2" H 6400 4100 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 6350 4300 50  0001 C CNN
 F 3 "" H 6350 4300 50  0001 C CNN
 	1    6350 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 4300 5050 4300
-Wire Wire Line
 	5050 3400 5050 4850
 Wire Wire Line
 	4600 4850 6000 4850
-Wire Wire Line
-	6000 4850 6000 4300
-Wire Wire Line
-	6000 4300 6150 4300
 Connection ~ 5050 4850
 Wire Wire Line
 	5050 3400 5600 3400
-Connection ~ 5050 4300
-Wire Wire Line
-	5800 4200 5800 3900
-Wire Wire Line
-	5800 3900 6850 3900
-Wire Wire Line
-	6850 3900 6850 5100
-Wire Wire Line
-	6850 5100 6300 5100
-Wire Wire Line
-	6650 4200 6750 4200
-Wire Wire Line
-	6750 4200 6750 4950
-Wire Wire Line
-	6750 4950 6200 4950
 Wire Wire Line
 	6200 4950 6200 5100
 Wire Wire Line
@@ -150,14 +129,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 3250 5900 3400
 Wire Wire Line
-	5700 3400 5700 3800
-Wire Wire Line
-	5700 3800 7100 3800
-Wire Wire Line
-	7100 4550 7100 3800
-Wire Wire Line
 	6100 4550 6100 5100
-Connection ~ 7100 4550
 Wire Wire Line
 	4800 4550 4800 4650
 Wire Wire Line
@@ -180,5 +152,46 @@ Wire Wire Line
 Wire Wire Line
 	7650 4350 7300 4350
 Wire Wire Line
-	4800 4550 7100 4550
+	5800 4300 5900 4300
+Wire Wire Line
+	5900 4300 5900 4750
+Wire Wire Line
+	5900 4750 4600 4750
+Wire Wire Line
+	5700 5100 5700 4900
+Wire Wire Line
+	6700 4300 6700 5100
+Wire Wire Line
+	6700 4300 6650 4300
+Wire Wire Line
+	6000 4850 6000 4400
+Wire Wire Line
+	6000 4400 6150 4400
+Wire Wire Line
+	5300 4400 5300 4850
+Connection ~ 5300 4850
+Wire Wire Line
+	5200 4900 5200 4300
+Wire Wire Line
+	5200 4300 5300 4300
+Wire Wire Line
+	5700 4900 5200 4900
+Wire Wire Line
+	6700 5100 6300 5100
+Wire Wire Line
+	6050 4950 6200 4950
+Wire Wire Line
+	6150 4300 6050 4300
+Wire Wire Line
+	6050 4300 6050 4950
+Wire Wire Line
+	5700 3300 4900 3300
+Wire Wire Line
+	4900 3300 4900 4550
+Connection ~ 4900 4550
+Connection ~ 5700 3400
+Wire Wire Line
+	5700 3300 5700 3400
+Wire Wire Line
+	4800 4550 6650 4550
 $EndSCHEMATC
